@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Colleges</title>
+
+<style>
+
+body{
+    font-family: Arial;
+}
+
+.navbar{
+    background-color: darkblue;
+    padding:15px;
+}
+
+.navbar a{
+    color:white;
+    margin-right:20px;
+    text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+<a href="/">Home</a>
+
+<a href="/colleges/">Colleges</a>
+
+<a href="/students/">Students</a>
+
+<a href="/address/">Address</a>
+
+</div>
+
+<h2>Colleges List</h2>
+
+<ul>
+
+{% for college in colleges %}
+
+<li>{{ college }}</li>
+
+{% endfor %}
+
+</ul>
+
+</body>
+</html>
